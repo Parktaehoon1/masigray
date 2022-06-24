@@ -111,7 +111,7 @@ $(document).ready(function () {
 	});
 	// 위로가기
 	let go_top = $('.gotop');
-	go_top.click(function(){
+	go_top.click(function () {
 		$('html').animate({
 			scrollTop: 0
 		}, 1000);
