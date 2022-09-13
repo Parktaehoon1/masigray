@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<!-- 글자표현, 없으면 깨져서 나옴 -->
 	<!-- 파비콘 위치 -->
-  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<link rel="manifest" href="images/site.webmanifest">
@@ -21,33 +21,46 @@
 	<meta name="path_role" content="MAIN" />
 	<meta name="author" content="대구 커피 브랜드 마시그래이" />
 	<meta name="description" content="대구 커피 브랜드 마시그래이에서 커피 마셔요" />
-	<meta name="keywords"
-		content="마시그래이, 체인점, 커피, 대구, 가맹점" />
-
-	<!-- //파비콘 위치 -->
+	<meta name="keywords" content="마시그래이, 체인점, 커피, 대구, 가맹점" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- content="IE=edge" 필수 없으면 스타일시트 깨짐 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
-	<!-- 이거없으면 반응형 안됨 -->
 	<title>마시그래이</title>
 	<script src="js/prefixfree.min.js"></script>
 	<!--[if lt IE 9]> 
         <script src="js/html5shiv.js"></script>
     <![endif]-->
 	<script src="js/respond.min.js"></script>
-	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<!--// JQuery -->
-	<!-- 스와이프 -->
 	<link rel="stylesheet" href="js/swiper/swiper.min.css">
 	<script src="js/swiper/swiper.min.js"></script>
-	<!--//스와이프  -->
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/script.js"></script>
 </head>
+
 <body>
+	<!-- 모달창 -->
+	<div class="modal-wrap">
+		<div class="modal-main">
+			<img src="images/warning.png" alt="경고아이콘" class="modal-warning">
+			<h1>마시그래이 클론코딩</h1>
+			<p class="modal-desc">
+				이 사이트는 <span class="checkfont">스터디용</span>으로 제작되었으며 리소스는 <span class="checkfont">원저작자</span>에게 있습니다.
+				<br>
+				해당 사이트 관련 문제 사항이 있으시면 연락해주시면 삭제하겠습니다.
+
+			</p>
+
+			<p class="modal-chrome">본 사이트는 <span class="checkfont">Chrome</span> 에 최적화되어 있습니다.</p>
+			<button class="modal-close">
+				<!-- <i class="fas fa-times"></i> -->
+				CLOSE
+			</button>
+		</div>
+	</div>
+
 	<!-- 위로가기 -->
 	<button class="gotop"></button>
 
@@ -66,7 +79,7 @@
 			<ul class="mb-sns-list clearfix">
 				<li>
 					<a href="#">
-					<img src="images/sns_blog.png" alt="블로그">
+						<img src="images/sns_blog.png" alt="블로그">
 					</a>
 				</li>
 				<li>
@@ -125,7 +138,7 @@
 
 			<li>
 				<a href="#">공지사항</a>
-				<ul class="mb-submenu"> 
+				<ul class="mb-submenu">
 					<li><a href="#">공지사항</a></li>
 					<li><a href="#">이벤트</a></li>
 				</ul>
@@ -211,7 +224,7 @@
 							</li>
 
 							<li><a href="#">공지사항</a>
-								<ul class="submenu"> 
+								<ul class="submenu">
 									<li><a href="#">공지사항</a></li>
 									<li><a href="#">이벤트</a></li>
 								</ul>
@@ -457,7 +470,8 @@
 
 				<p class="footer-copy">
 					(주) 에스이엠 <i class="bar"></i> 사업자등록번호 : 502 - 86 - 32017 <i class="bar"></i> 대표이사 : 정영주<br />
-					주소 : 대구광역시 수성구 만촌동 957-2번지 2층 <i class="bar"></i> 전화 : 1899-2087 <i class="bar"></i> 팩스 : 053-474-9522
+					주소 : 대구광역시 수성구 만촌동 957-2번지 2층 <i class="bar"></i> 전화 : 1899-2087 <i class="bar"></i> 팩스 :
+					053-474-9522
 				</p>
 
 				<hr>

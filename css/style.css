@@ -59,8 +59,130 @@ body {
   clear: both;
 }
 
+/* 모달창 */
+.modal-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+}
+
+.modal-main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 70%);
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-main h1 {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  padding: 20px 0;
+}
+
+
+.modal-desc {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  display: block;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #111;
+  line-height: 1.8;
+}
+
+.modal-chrome {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  display: block;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.8;
+}
+
+.checkfont {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #ed1c24;
+}
+
+.modal-main h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  padding: 20px 0;
+}
+
+.modal-main .modal-list {
+  text-align: left;
+  padding: 10px 80px;
+}
+
+.modal-close {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: block;
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 25px;
+  background: transparent;
+  color: #000;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.modal-close:hover {
+  color: red;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3)
+}
+
+.modal-warning {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  color: red;
+  opacity: 0.3;
+  z-index: -9;
+}
+
+
+
 /* 위로가기 */
-.gotop{
+.gotop {
   position: fixed;
   right: 20px;
   bottom: 50px;
@@ -77,7 +199,7 @@ body {
 
 
 /* 모바일 메뉴 */
-.mb-bt{
+.mb-bt {
   position: fixed;
   left: 20px;
   top: 30px;
@@ -87,32 +209,34 @@ body {
   z-index: 99997;
 }
 
-.mb-bt::before{
+.mb-bt::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  display: block;  
+  display: block;
   width: 100%;
   height: 3px;
   background-color: #51504e;
 }
-.mb-bt span{
+
+.mb-bt span {
   position: absolute;
   left: 0;
   top: 9px;
-  display: block;  
+  display: block;
   width: 100%;
   height: 3px;
   background-color: #51504e;
 
 }
-.mb-bt::after{
+
+.mb-bt::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
-  display: block;  
+  display: block;
   width: 100%;
   height: 3px;
   background-color: #51504e;
@@ -121,7 +245,7 @@ body {
 
 
 /* 모바일 가림막 */
-.mb-dim{
+.mb-dim {
   position: fixed;
   left: 0;
   top: 0;
@@ -129,10 +253,11 @@ body {
   z-index: 9998;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
+
 /* 모바일 메뉴내용 */
-.mb-wrap{
+.mb-wrap {
   position: fixed;
   left: -320px;
   top: 0;
@@ -144,11 +269,11 @@ body {
   transition: left 0.5s;
 }
 
-.mb-wrap-open{
+.mb-wrap-open {
   left: 0;
 }
 
-.mb-close{
+.mb-close {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -159,37 +284,42 @@ body {
   z-index: 9;
 }
 
-.mb-sns{
+.mb-sns {
   position: relative;
   display: block;
   padding: 20px 20px;
 }
-.mb-sns-list{
+
+.mb-sns-list {
   position: relative;
   display: block;
 }
-.mb-sns-list li{
+
+.mb-sns-list li {
   position: relative;
   display: block;
   float: left;
   margin-right: 5px;
 }
-.mb-sns-list li a{
+
+.mb-sns-list li a {
   position: relative;
   display: block;
 }
 
-.mb-menu{
+.mb-menu {
   position: relative;
   display: block;
 }
-.mb-menu > li{
+
+.mb-menu>li {
   position: relative;
   display: block;
 
   border-bottom: 1px solid #eee;
 }
-.mb-menu > li > a{
+
+.mb-menu>li>a {
   position: relative;
   display: block;
   line-height: 50px;
@@ -199,7 +329,7 @@ body {
   font-weight: 500;
 }
 
-.mb-menu > li > a::after{
+.mb-menu>li>a::after {
   content: '';
   position: absolute;
   right: 20px;
@@ -212,7 +342,7 @@ body {
   transition: transform 0.5s;
 }
 
-.mb-icon-rot::after{
+.mb-icon-rot::after {
   transform: translateY(-50%) rotate(180deg) !important;
 }
 
@@ -220,6 +350,7 @@ body {
 .mb-menu-focus {
   color: #4abbc3 !important;
 }
+
 /* .mb-menu > li:hover > a {
   color: #4abbc3
 }
@@ -228,17 +359,19 @@ body {
 } 
 js로 클릭으로 바꿀꺼임*/
 
-.mb-submenu{
+.mb-submenu {
   position: relative;
   display: none;
   background-color: #f2f2f2;
 
 }
-.mb-submenu li{
+
+.mb-submenu li {
   position: relative;
   display: block;
 }
-.mb-submenu li a{
+
+.mb-submenu li a {
   position: relative;
   display: block;
   font-size: 13px;
@@ -291,7 +424,7 @@ js로 클릭으로 바꿀꺼임*/
   position: relative;
   display: block;
   z-index: 9999;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-fix {
@@ -380,7 +513,7 @@ js로 클릭으로 바꿀꺼임*/
 
   height: 87px;
   overflow: hidden;
-  
+
   transition: height 0.5s;
 }
 
@@ -481,6 +614,7 @@ js로 클릭으로 바꿀꺼임*/
   .menu>li {
     padding: 0 15px;
   }
+
   .mb-dim {
     display: none;
   }
@@ -507,7 +641,7 @@ js로 클릭으로 바꿀꺼임*/
     display: none;
   }
 
-  .mb-bt{
+  .mb-bt {
     display: block;
   }
 }
